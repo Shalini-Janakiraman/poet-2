@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Angel | என் தேவதை</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&family=Dancing+Script:wght@700&display=swap');
+
+        body {
+            font-family: 'Noto Sans Tamil', sans-serif;
+        }
+        
+        h1 {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-rose-100 via-purple-100 to-blue-100 min-h-screen flex items-center justify-center p-4">
+
+    <div class="container max-w-4xl w-full bg-white/90 backdrop-blur-lg rounded-2xl shadow-2xl shadow-rose-200/50 overflow-hidden md:flex animate-fade-in">
+        
+        <!-- Poem Section -->
+        <div class="md:w-1e/2 p-8 md:p-12 flex flex-col justify-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-rose-800 mb-8 text-center whitespace-nowrap">
+                என் தேவதை
+            </h1>
+            
+            <div class="poem-container text-center mb-8">
+                <div id="poem-text" class="text-lg md:text-xl leading-loose text-gray-700">
+                    நதி நீரில் காதலை கண்டேன்,<br>
+                    விழித் துடைக்கும் கைகளிலே,<br>
+                    இமை முட இருவிழிகளிலே,<br>
+                    காற்றறி மாறி கரைந்துவிட்டால்,<br>
+                    ஓடி சேரும் கடலினிலே,<br>
+                    உனையும் уனையும் ஓர் நாள் அடைவேனே,<br>
+                    என் கண்ணில் வழியும் உனையே...!
+                </div>
+            </div>
+
+            <div class="credit text-left text-rose-900/70 italic text-lg">
+                - Beggar's Mind
+            </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="md:w-1/2">
+            <img 
+                src="https://images.unsplash.com/photo-1528824669814-a1a6f8f53a6f?q=80&w=800&auto=format&fit=crop" 
+                alt="A close-up, artistic image of a hand gently wiping a tear from a girl's eye." 
+                class="w-full h-64 md:h-full object-cover"
+                onerror="this.onerror=null;this.src='https://placehold.co/800x1200/fbcfe8/4a2c3a?text=Poet%27s+Dream';"
+            >
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+
